@@ -1,2 +1,2 @@
 # STAR-S-PHOTO-STUDIO
-Just capture the scene by the click made by us.
+Just capture the scene that click made by us.
