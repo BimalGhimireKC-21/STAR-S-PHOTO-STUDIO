@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="STAR'S PHOTO STUDIO NEPAL - Premier photographer in Kathmandu & Pokhara. Award-winning wedding photos, creative portraits, cinematic storytelling. Book your dream session today!">
-  <meta name="keywords" content="photographer in Kathmandu, wedding photos Nepal, STAR'S PHOTO STUDIO, best photography packages, photo tips, client highlights, wedding photography, engagement shoot">
-  <meta name="author" content="STAR'S PHOTO STUDIO NEPAL">
-  <meta name="robots" content="index, follow">
-  <title>STAR'S PHOTO STUDIO | Elite Photography in Nepal</title>
-  <!-- Font Awesome 6 (free) -->
+  <meta name="description" content="STAR'S STUDIO - Premium Photography in Tilottama, Butwal. Wedding, nature & cinematic storytelling. Book your exclusive session today!">
+  <meta name="keywords" content="photographer in Butwal, wedding photos Tilottama, STAR'S STUDIO, premium photography packages, natural scenes, wedding gallery, TTC BOYS">
+  <meta name="author" content="STAR'S STUDIO | TTC BOYS">
+  <title>STAR'S STUDIO | Premium Photography - Butwal, Nepal</title>
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts: elegant + modern -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -21,16 +20,15 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #0b0b0f;
-      color: #ece8e0;
+      background: #0a0c12;
+      color: #eef2ff;
       scroll-behavior: smooth;
       line-height: 1.5;
     }
 
-    h1, h2, h3, h4, .logo-text, .hero h2 {
+    h1, h2, h3, h4, .hero h2, .section-title {
       font-family: 'Cormorant Garamond', serif;
-      font-weight: 600;
-      letter-spacing: -0.02em;
+      font-weight: 700;
     }
 
     .container {
@@ -39,16 +37,15 @@
       padding: 0 28px;
     }
 
-    /* glassmorphism and dark elegant theme */
+    /* Premium dark/blue theme */
     header {
-      background: rgba(10, 10, 15, 0.92);
+      background: rgba(10, 14, 23, 0.92);
       backdrop-filter: blur(12px);
-      padding: 18px 0;
+      padding: 14px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1px solid rgba(245, 197, 66, 0.25);
-      transition: 0.3s;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
     }
 
     .header-flex {
@@ -59,41 +56,74 @@
       gap: 20px;
     }
 
+    /* New premium logo: camera + lens ring + initials */
     .logo {
       display: flex;
       align-items: center;
       gap: 14px;
+      text-decoration: none;
     }
 
     .logo-icon {
-      background: linear-gradient(135deg, #f5c542, #d4a02b);
-      width: 48px;
-      height: 48px;
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(145deg, #1e293b, #0f172a);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 12px rgba(245,197,66,0.4);
+      position: relative;
+      border: 2px solid #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.2), inset 0 1px 2px rgba(255,255,255,0.1);
+      transition: 0.2s;
     }
 
     .logo-icon i {
-      font-size: 1.9rem;
-      color: #0b0b0f;
+      font-size: 1.8rem;
+      color: #60a5fa;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+
+    /* Decorative lens ring */
+    .logo-icon::before {
+      content: "";
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+      border: 1px solid #3b82f6;
+      opacity: 0.6;
+    }
+
+    .logo-icon::after {
+      content: "SS";
+      position: absolute;
+      bottom: -4px;
+      right: -8px;
+      background: #3b82f6;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 2px 5px;
+      border-radius: 20px;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
 
     .logo h1 {
-      font-size: 1.85rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, #f9e0a0, #e6b422);
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff, #93c5fd);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+      letter-spacing: -0.5px;
     }
 
     .logo span {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       letter-spacing: 2px;
-      color: #c0b58a;
+      color: #94a3b8;
     }
 
     .nav-links {
@@ -103,12 +133,13 @@
     }
 
     .nav-links a {
-      color: #f0ebdd;
+      color: #e2e8f0;
       text-decoration: none;
       font-weight: 600;
       font-size: 0.95rem;
       transition: 0.25s;
       position: relative;
+      cursor: pointer;
     }
 
     .nav-links a:after {
@@ -118,7 +149,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: #f5c542;
+      background: #3b82f6;
       transition: 0.3s;
     }
 
@@ -127,12 +158,12 @@
     }
 
     .nav-links a.active {
-      color: #f5c542;
+      color: #60a5fa;
     }
 
-    /* hero section */
+    /* Hero section with smoother overlay */
     .hero {
-      background: linear-gradient(125deg, #030305d9, #0f0f1ad9), url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&h=700&fit=crop') center/cover no-repeat;
+      background: linear-gradient(125deg, #0a0c12d9, #0f172ae6), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=800&fit=crop') center/cover no-repeat;
       min-height: 85vh;
       display: flex;
       align-items: center;
@@ -142,199 +173,285 @@
     .hero h2 {
       font-size: 4rem;
       font-weight: 800;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      background: linear-gradient(135deg, #ffffff, #bfdbfe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
 
     .hero p {
       font-size: 1.2rem;
       max-width: 680px;
       margin: 20px auto;
-      opacity: 0.9;
+      color: #cbd5e1;
     }
 
     .btn {
-      background: #f5c542;
-      color: #0f0f14;
+      background: #3b82f6;
+      color: #ffffff;
       padding: 14px 38px;
-      font-weight: 800;
+      font-weight: 700;
       border-radius: 50px;
       text-decoration: none;
       display: inline-block;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
       border: none;
       cursor: pointer;
       font-size: 1rem;
-      letter-spacing: 0.5px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 18px rgba(59,130,246,0.3);
     }
 
     .btn-outline {
       background: transparent;
-      border: 2px solid #f5c542;
-      color: #f5c542;
+      border: 2px solid #3b82f6;
+      color: #93c5fd;
       box-shadow: none;
     }
 
     .btn-outline:hover {
-      background: #f5c542;
-      color: #0b0b0f;
+      background: #3b82f6;
+      color: #0f172a;
+      transform: translateY(-3px);
     }
 
     .btn:hover {
       transform: translateY(-3px);
       filter: brightness(1.05);
+      box-shadow: 0 12px 22px rgba(59,130,246,0.4);
     }
 
     section {
-      padding: 90px 0;
-      border-bottom: 1px solid rgba(245, 197, 66, 0.15);
+      padding: 80px 0;
+      border-bottom: 1px solid #1e293b;
     }
 
     .section-title {
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.8rem;
       margin-bottom: 55px;
-      font-weight: 700;
+      color: #f1f5f9;
     }
 
     .section-title span {
-      color: #f5c542;
-      border-bottom: 2px solid #f5c542;
+      color: #60a5fa;
+      border-bottom: 3px solid #3b82f6;
       display: inline-block;
       padding-bottom: 6px;
     }
 
-    /* gallery grid premium */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 28px;
+    /* Features */
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: center;
+    }
+    .feature-card {
+      background: #111827;
+      border-radius: 32px;
+      padding: 35px 25px;
+      flex: 1;
+      min-width: 230px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #1e293b;
+      backdrop-filter: blur(4px);
+    }
+    .feature-card i {
+      font-size: 2.6rem;
+      color: #60a5fa;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #facc15;
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+      border-color: #3b82f6;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     }
 
+    /* Gallery & Search */
+    .search-bar {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .search-bar input {
+      width: 100%;
+      max-width: 450px;
+      padding: 14px 24px;
+      border-radius: 60px;
+      background: #111827;
+      border: 1px solid #334155;
+      color: #e2e8f0;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.2s;
+    }
+    .search-bar input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+    }
     .gallery-card {
       border-radius: 24px;
       overflow: hidden;
-      background: #15151e;
-      transition: 0.4s;
+      background: #0f172a;
+      transition: 0.25s;
       cursor: pointer;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-
     .gallery-card img {
       width: 100%;
-      height: 280px;
+      height: 260px;
       object-fit: cover;
       transition: 0.4s;
       display: block;
     }
-
     .gallery-card:hover img {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
-
     .gallery-card .info {
-      padding: 18px;
+      padding: 16px;
+      color: #cbd5e6;
+    }
+    .gallery-card .info h4 {
+      font-size: 1.1rem;
     }
 
-    /* packages styling */
+    /* Packages */
     .packages-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 35px;
       justify-content: center;
     }
-
     .package-card {
-      background: #121217;
+      background: #111827;
       border-radius: 32px;
       padding: 32px 24px;
       flex: 1;
       min-width: 260px;
-      border: 1px solid #2c2a2a;
+      border: 1px solid #1e293b;
       transition: 0.2s;
-      backdrop-filter: blur(4px);
     }
-
     .package-card:hover {
-      border-color: #f5c542;
-      transform: translateY(-10px);
+      border-color: #3b82f6;
+      transform: translateY(-8px);
     }
-
     .price {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 800;
-      color: #f5c542;
+      color: #facc15;
     }
 
-    /* booking form */
+    /* Booking Form */
     .booking-card {
-      background: #111116;
+      background: #111827;
       padding: 48px;
       border-radius: 48px;
-      border: 1px solid #2a271f;
-      box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+      border: 1px solid #1e293b;
+      transition: 0.2s;
     }
-
     .form-row {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
+      margin-bottom: 20px;
     }
-
     .input-group {
       flex: 1;
-      margin-bottom: 22px;
     }
-
     .input-group input, .input-group select, .input-group textarea {
-      width: 100%;
-      padding: 16px 20px;
-      background: #1e1e28;
-      border: 1px solid #35332b;
+      background: #0f172a;
+      border: 1px solid #334155;
+      color: #e2e8f0;
       border-radius: 60px;
-      color: #f0ebdd;
+      padding: 14px 20px;
+      width: 100%;
       font-size: 1rem;
+      transition: 0.2s;
     }
-
     .input-group textarea {
       border-radius: 28px;
+      resize: vertical;
+    }
+    .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+      border-color: #3b82f6;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
     }
 
-    /* tips & highlights */
+    /* Tips & Testimonials */
     .insight-flex {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
     }
-
     .tips-panel, .testimonial-panel {
-      flex: 1;
-      background: #12121a;
+      background: #111827;
+      border: 1px solid #1e293b;
       padding: 32px;
       border-radius: 32px;
+      flex: 1;
     }
-
     .client-item {
-      border-left: 3px solid #f5c542;
+      border-left: 3px solid #3b82f6;
       padding-left: 20px;
       margin-bottom: 28px;
     }
 
-    /* footer */
+    /* Footer */
     footer {
-      background: #060608;
-      padding: 50px 0 30px;
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      color: #94a3b8;
       text-align: center;
-      border-top: 1px solid #22201b;
+      padding: 50px 0 30px;
+    }
+    .social-icons a {
+      color: #60a5fa;
+      font-size: 1.6rem;
+      margin: 0 15px;
+      transition: 0.2s;
+      display: inline-block;
+    }
+    .social-icons a:hover {
+      color: #ffffff;
+      transform: translateY(-3px);
     }
 
-    @media (max-width: 800px) {
-      .hero h2 { font-size: 2.5rem; }
-      .section-title { font-size: 2.2rem; }
-      .booking-card { padding: 28px; }
+    /* Floating WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      z-index: 1100;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.02);
+      background: #20b859;
     }
 
-    /* lightbox */
+    /* Lightbox */
     .lightbox {
       display: none;
       position: fixed;
@@ -342,10 +459,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.95);
+      background: rgba(0,0,0,0.96);
       align-items: center;
       justify-content: center;
       z-index: 2000;
+      cursor: pointer;
     }
     .lightbox.active {
       display: flex;
@@ -354,15 +472,30 @@
       max-width: 85%;
       max-height: 85%;
       border-radius: 20px;
-      border: 2px solid #f5c542;
+      border: 3px solid #3b82f6;
+      box-shadow: 0 0 30px rgba(59,130,246,0.3);
     }
     .close-light {
       position: absolute;
       top: 30px;
       right: 40px;
       font-size: 2.5rem;
-      color: #f5c542;
+      color: #3b82f6;
       cursor: pointer;
+      transition: 0.2s;
+    }
+    .close-light:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .hero h2 { font-size: 2.4rem; }
+      .section-title { font-size: 2rem; margin-bottom: 35px; }
+      .booking-card { padding: 28px; }
+      .nav-links { gap: 20px; justify-content: center; }
+      .header-flex { justify-content: center; text-align: center; }
+      .logo { justify-content: center; }
     }
   </style>
 </head>
@@ -371,18 +504,18 @@
 <header>
   <div class="container header-flex">
     <div class="logo">
-      <div class="logo-icon"><i class="fas fa-camera-retro"></i></div>
+      <div class="logo-icon"><i class="fas fa-camera"></i></div>
       <div>
-        <h1>STAR'S PHOTO STUDIO</h1>
-        <span>EST. 2012 — 2026 | NEPAL • KATHMANDU</span>
+        <h1>STAR'S STUDIO</h1>
+        <span>EST. 2026 | TILOTTAMA · BUTWAL</span>
       </div>
     </div>
     <div class="nav-links">
-      <a href="#" class="nav-link active" data-page="home">HOME</a>
-      <a href="#" class="nav-link" data-page="portfolio">PORTFOLIO</a>
-      <a href="#" class="nav-link" data-page="packages">PACKAGES</a>
-      <a href="#" class="nav-link" data-page="booking">BOOKING</a>
-      <a href="#" class="nav-link" data-page="contact">CONTACT</a>
+      <a class="nav-link active" data-page="home">HOME</a>
+      <a class="nav-link" data-page="portfolio">PORTFOLIO</a>
+      <a class="nav-link" data-page="packages">PACKAGES</a>
+      <a class="nav-link" data-page="booking">BOOKING</a>
+      <a class="nav-link" data-page="contact">CONTACT</a>
     </div>
   </div>
 </header>
@@ -391,81 +524,114 @@
 
 <footer>
   <div class="container">
-    <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 25px;">
-      <i class="fab fa-instagram" style="font-size: 1.5rem; color: #f5c542;"></i>
-      <i class="fab fa-facebook-f" style="font-size: 1.5rem; color: #f5c542;"></i>
-      <i class="fab fa-pinterest" style="font-size: 1.5rem; color: #f5c542;"></i>
+    <div class="social-icons">
+      <a href="https://facebook.com/STARSStudioButwal" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/starsstudio_butwal" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/9779876543210" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
     </div>
-    <p>© 2026 STAR'S PHOTO STUDIO NEPAL — Premier Photographer in Kathmandu | Award-Winning Wedding & Fine Art Photography</p>
-    <p style="margin-top: 12px; font-size: 0.85rem;">📍 Lazimpat, Kathmandu | Lakeside, Pokhara | hello@starsphoto.com.np</p>
+    <p style="margin-top: 24px;">© 2026 STAR'S STUDIO — Tilottama-5, Butwal, Nepal | Premium Natural & Wedding Photography</p>
+    <p>✉️ starsstudio321@gmail.com | 📞 +977 9876543210</p>
+    <p style="margin-top: 16px; font-size: 0.85rem; letter-spacing: 1px;">✨ Crafted with passion by <strong style="color:#60a5fa;">TTC BOYS</strong> ✨</p>
   </div>
 </footer>
 
-<!-- lightbox component -->
-<div id="lightbox" class="lightbox">
-  <span class="close-light">&times;</span>
-  <img id="lightbox-img" src="" alt="full size">
-</div>
+<a href="https://wa.me/9779876543210" target="_blank" class="whatsapp-float" rel="noopener"><i class="fab fa-whatsapp"></i> Chat</a>
+
+<div id="lightbox" class="lightbox"><span class="close-light">&times;</span><img id="lightbox-img" alt="Full size preview"></div>
 
 <script>
-  // -------- ULTRA PREMIUM PHOTOGRAPHY SAMPLES (realistic unsplash images) ----------
-  const portfolioSamples = [
-    { src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=450&fit=crop", title: "Royal Wedding Moment", category: "Wedding Elegance" },
-    { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&h=450&fit=crop", title: "Bridal Glow", category: "Portrait" },
-    { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=450&fit=crop", title: "Candid Kiss", category: "Wedding Story" },
-    { src: "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb6b?w=600&h=450&fit=crop", title: "Golden Hour Couple", category: "Engagement" },
-    { src: "https://images.unsplash.com/photo-1505228395891-9a51e7e86a6b?w=600&h=450&fit=crop", title: "Mountain Elopement", category: "Destination" },
-    { src: "https://images.unsplash.com/photo-1583939003579-730e3938e45e?w=600&h=450&fit=crop", title: "Festival Highlights", category: "Cultural" },
-    { src: "https://images.unsplash.com/photo-1551803091-e20673f15770?w=600&h=450&fit=crop", title: "Modern Studio", category: "Creative" },
-    { src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&h=450&fit=crop", title: "Wedding Party Joy", category: "Event" }
+  // ---------- 25+ HIGH-QUALITY IMAGES (Natural Scenes + Weddings) ----------
+  const allImages = [
+    { src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed", title: "Golden Wedding Vows", category: "Wedding" },
+    { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf", title: "Bridal Elegance", category: "Portrait" },
+    { src: "https://images.unsplash.com/photo-1519741497674-611481863552", title: "Candid Kiss", category: "Wedding Story" },
+    { src: "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb6b", title: "Engagement Glow", category: "Couple" },
+    { src: "https://images.unsplash.com/photo-1505228395891-9a51e7e86a6b", title: "Mountain Elopement", category: "Nature+Wedding" },
+    { src: "https://images.unsplash.com/photo-1583939003579-730e3938e45e", title: "Festival Colors", category: "Cultural" },
+    { src: "https://images.unsplash.com/photo-1551803091-e20673f15770", title: "Studio Art", category: "Creative" },
+    { src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc", title: "Wedding Party", category: "Event" },
+    { src: "https://images.unsplash.com/photo-1537633552989-daa838bba62c", title: "Sunset Couple", category: "Natural Light" },
+    { src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4", title: "Scenic Mountains", category: "Nature" },
+    { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e", title: "Forest Path", category: "Natural Scene" },
+    { src: "https://images.unsplash.com/photo-1441974231531-c622288db792", title: "Misty Woods", category: "Landscape" },
+    { src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b", title: "Wedding at Lake", category: "Wedding" },
+    { src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486", title: "Bridal Details", category: "Wedding Details" },
+    { src: "https://images.unsplash.com/photo-1525770041010-2a1233ddb8e4", title: "Wedding Decor", category: "Event" },
+    { src: "https://images.unsplash.com/photo-1544383835-cda2d66a6c3c", title: "Countryside Wedding", category: "Natural" },
+    { src: "https://images.unsplash.com/photo-1504198266287-1659872e6590", title: "Rice Field Love", category: "Butwal Nature" },
+    { src: "https://images.unsplash.com/photo-1509316785289-025f5b846b35", title: "Terraced Fields", category: "Scenic" },
+    { src: "https://images.unsplash.com/photo-1518621534848-4bc13b6e5f0f", title: "Candid Laugh", category: "Wedding Joy" },
+    { src: "https://images.unsplash.com/photo-1527525443983-6e60c75fff46", title: "Floral Portrait", category: "Creative" },
+    { src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a", title: "Riverbank Sunset", category: "Natural Scene" },
+    { src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc", title: "Wedding Dance", category: "Wedding" },
+    { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", title: "Waterfall Romance", category: "Nature" },
+    { src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05", title: "Morning Mist", category: "Landscape" },
+    { src: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963", title: "Country Path", category: "Natural Scene" }
   ];
 
-  // Packages data
-  const packagesData = [
-    { name: "GOLDEN HOUR", price: "NPR 29,999", features: ["2 hours coverage", "60+ edited digital images", "Online gallery", "1 location within valley"] },
-    { name: "ROYAL WEDDING", price: "NPR 1,25,000", features: ["Full day (10+ hrs)", "500+ hi-res photos", "Pre-wedding consult", "Fine art album design", "Drone shot (selected)"] },
-    { name: "CINEMATIC STORY", price: "NPR 72,500", features: ["6 hours event", "200+ images", "Behind the scenes reel", "Print rights & travel support"] }
+  const features = [
+    { icon: "fas fa-crown", title: "Premium Quality", desc: "Luxury editing & high-resolution delivery." },
+    { icon: "fas fa-mountain", title: "Natural Scenes", desc: "We shoot at Butwal's most breathtaking locations." },
+    { icon: "fas fa-heart", title: "Emotion First", desc: "Candid storytelling, no artificial poses." },
+    { icon: "fas fa-gem", title: "Tailored Packages", desc: "Flexible plans for weddings & portraits." }
   ];
 
-  const photoTipsList = [
-    "Golden hour magic always elevates wedding photos — schedule your session 1hr before sunset.",
-    "Embrace candid moments; authentic emotion beats any pose.",
-    "Use natural reflectors like white walls, snow, or sand for soft fill light.",
-    "Engagement shoots before the wedding? It builds chemistry with your photographer!"
+  const packages = [
+    { name: "ESSENTIAL", price: "NPR 24,999", features: ["2 hours shoot", "40+ edited photos", "Online gallery", "Local spots"] },
+    { name: "PREMIUM WEDDING", price: "NPR 89,000", features: ["10+ hours", "450+ images", "Pre-wedding consult", "Fine art album", "Drone option"] },
+    { name: "CINEMATIC", price: "NPR 59,000", features: ["6 hours event", "200+ images", "Highlight reel", "Print rights"] }
   ];
 
-  const clientReviews = [
-    { name: "Preeti & Suman", text: "STAR'S captured our wedding like a dream. Every single photo tells a story! Best photographer in Nepal.", location: "Kathmandu" },
-    { name: "Rohan & Sneha", text: "The team was professional, creative, and made us feel so comfortable. Our wedding album is breathtaking.", location: "Pokhara" },
-    { name: "Nisha Gurung", text: "Their attention to detail and use of natural light is unmatched. Highly recommend for weddings and portraits.", location: "Lalitpur" }
+  const tips = [
+    "Golden hour in Tilottama (5–6 PM) creates magic.",
+    "Incorporate local elements – rice fields, traditional attire.",
+    "Don't skip detail shots: rings, mehendi, decor.",
+    "Relax and trust us – candid emotions win."
+  ];
+  const testimonials = [
+    { name: "Roshani & Anup", text: "STAR'S STUDIO made our wedding unforgettable! Premium quality and care.", location: "Butwal" },
+    { name: "Sarita K.C.", text: "The natural light photography is breathtaking. Best in Tilottama!", location: "Tilottama" },
+    { name: "Bishal Thapa", text: "Professional, creative and so easy to work with.", location: "Bhairahawa" }
   ];
 
-  // helper navigation and render
   let currentPage = "home";
 
   function setActiveNav(page) {
     document.querySelectorAll('.nav-link').forEach(link => {
-      if (link.getAttribute('data-page') === page) link.classList.add('active');
+      if (link.dataset.page === page) link.classList.add('active');
       else link.classList.remove('active');
     });
   }
 
-  // lightbox activation
-  function initLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.close-light');
-    document.querySelectorAll('.gallery-card').forEach(card => {
-      card.addEventListener('click', (e) => {
-        const imgSrc = card.querySelector('img')?.getAttribute('src');
-        if (imgSrc) {
-          lightboxImg.src = imgSrc;
-          lightbox.classList.add('active');
-        }
+  function renderGallery(images, searchTerm = "") {
+    const filtered = searchTerm ? images.filter(img => img.title.toLowerCase().includes(searchTerm.toLowerCase()) || img.category.toLowerCase().includes(searchTerm.toLowerCase())) : images;
+    if (filtered.length === 0) return `<div style="text-align:center; padding:40px; grid-column:1/-1;">✨ No matching photos found. Try another keyword.</div>`;
+    return filtered.map(img => `
+      <div class="gallery-card">
+        <img src="${img.src}?w=600&h=450&fit=crop" alt="${img.title}" loading="lazy">
+        <div class="info"><h4>${img.title}</h4><p style="color:#9ca3af;">${img.category}</p></div>
+      </div>
+    `).join('');
+  }
+
+  function attachLightboxToCards() {
+    setTimeout(() => {
+      document.querySelectorAll('.gallery-card').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.removeEventListener('click', lightboxHandler);
+        card.addEventListener('click', lightboxHandler);
       });
-    });
-    if (closeBtn) closeBtn.onclick = () => lightbox.classList.remove('active');
-    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('active'); });
+    }, 50);
+  }
+
+  function lightboxHandler(e) {
+    const img = this.querySelector('img');
+    if (img && img.src) {
+      const lightboxImg = document.getElementById('lightbox-img');
+      if (lightboxImg) lightboxImg.src = img.src;
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox) lightbox.classList.add('active');
+    }
   }
 
   function renderPage(page) {
@@ -478,49 +644,16 @@
       app.innerHTML = `
         <section class="hero">
           <div class="container">
-            <h2>STAR'S PHOTO STUDIO<br> <span style="color:#f5c542;">Where Every Frame Shines</span></h2>
-            <p>Nepal's most sought-after photography studio — specializing in wedding photos, timeless portraits, and cinematic storytelling.</p>
-            <a href="#" class="btn" data-nav="booking">BOOK YOUR SESSION →</a>
-            <a href="#" class="btn btn-outline" data-nav="portfolio" style="margin-left: 15px;">VIEW GALLERY</a>
+            <h2>STAR'S STUDIO<br><span style="color:#60a5fa;">Premium Visual Storytelling</span></h2>
+            <p>Based in Tilottama, Butwal — we specialize in luxury wedding photography, natural landscapes, and cinematic portraits.</p>
+            <a class="btn" data-nav="booking">Book Exclusive Session →</a>
+            <a class="btn btn-outline" data-nav="portfolio" style="margin-left: 15px;">View Gallery</a>
           </div>
         </section>
         <div class="container">
-          <section>
-            <h2 class="section-title"><span>Signature Craftsmanship</span></h2>
-            <div style="display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; text-align: center;">
-              <div><i class="fas fa-award" style="font-size: 3rem; color:#f5c542;"></i><h3 style="margin-top: 12px;">Award Winner</h3><p>Wedding Photographer of the Year 2024</p></div>
-              <div><i class="fas fa-map-marked-alt" style="font-size: 3rem; color:#f5c542;"></i><h3 style="margin-top: 12px;">Pan-Nepal Coverage</h3><p>Kathmandu · Pokhara · Mustang</p></div>
-              <div><i class="fas fa-images" style="font-size: 3rem; color:#f5c542;"></i><h3 style="margin-top: 12px;">500+ Weddings</h3><p>Stories of love & legacy</p></div>
-            </div>
-          </section>
-
-          <section>
-            <div class="insight-flex">
-              <div class="tips-panel">
-                <h3><i class="fas fa-lightbulb" style="color:#f5c542;"></i> Pro Photo Tips</h3>
-                <ul style="list-style: none; margin-top: 20px;">
-                  ${photoTipsList.map(tip => `<li style="margin-bottom: 15px;"><i class="fas fa-camera" style="margin-right: 12px; color:#f5c542;"></i> ${tip}</li>`).join('')}
-                </ul>
-              </div>
-              <div class="testimonial-panel">
-                <h3><i class="fas fa-star" style="color:#f5c542;"></i> Client Highlights</h3>
-                ${clientReviews.map(rev => `<div class="client-item"><p><i class="fas fa-quote-left" style="margin-right:8px; color:#ba8b2c;"></i> "${rev.text}"</p><p style="margin-top: 10px;"><strong>— ${rev.name}</strong>, ${rev.location}</p></div>`).join('')}
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="section-title"><span>Featured Work</span></h2>
-            <div class="gallery-grid" id="home-gallery">
-              ${portfolioSamples.slice(0, 4).map(sample => `
-                <div class="gallery-card">
-                  <img src="${sample.src}" alt="${sample.title}" loading="lazy">
-                  <div class="info"><h4>${sample.title}</h4><p style="color:#cfc8b5;">${sample.category}</p></div>
-                </div>
-              `).join('')}
-            </div>
-            <div style="text-align: center; margin-top: 40px;"><a href="#" class="btn" data-nav="portfolio">View Full Portfolio →</a></div>
-          </section>
+          <section><h2 class="section-title"><span>The Star's Signature</span></h2><div class="features-grid">${features.map(f => `<div class="feature-card"><i class="${f.icon}"></i><h3>${f.title}</h3><p>${f.desc}</p></div>`).join('')}</div></section>
+          <section><div class="insight-flex"><div class="tips-panel"><h3><i class="fas fa-lightbulb"></i> Pro Tips</h3><ul style="margin-top:20px;list-style:none;">${tips.map(t => `<li style="margin-bottom:15px;"><i class="fas fa-check-circle" style="color:#60a5fa;"></i> ${t}</li>`).join('')}</ul></div><div class="testimonial-panel"><h3><i class="fas fa-star"></i> Client Highlights</h3>${testimonials.map(t => `<div class="client-item"><p>"${t.text}"</p><p><strong>— ${t.name}</strong>, ${t.location}</p></div>`).join('')}</div></div></section>
+          <section><h2 class="section-title"><span>Recent Masterpieces</span></h2><div class="gallery-grid" id="home-gallery">${renderGallery(allImages.slice(0, 6))}</div><div style="text-align:center; margin-top:40px;"><a class="btn" data-nav="portfolio">Explore Full Portfolio →</a></div></section>
         </div>
       `;
     } 
@@ -528,162 +661,65 @@
       app.innerHTML = `
         <div class="container">
           <section>
-            <h2 class="section-title"><span>Our Visual Chronicle</span></h2>
-            <p style="text-align:center; margin-bottom: 50px;">Real weddings, engagements & editorials — a sneak peek into our artistry.</p>
-            <div class="gallery-grid" id="full-gallery">
-              ${portfolioSamples.map(sample => `
-                <div class="gallery-card">
-                  <img src="${sample.src}" alt="${sample.title}" loading="lazy">
-                  <div class="info"><h4>${sample.title}</h4><p style="color:#cfc8b5;">${sample.category}</p></div>
-                </div>
-              `).join('')}
+            <h2 class="section-title"><span>Natural & Wedding Gallery</span></h2>
+            <p style="text-align:center; margin-bottom:20px; color:#cbd5e6;">25+ breathtaking moments — from scenic landscapes to heartfelt weddings in Butwal, Tilottama & beyond.</p>
+            <div class="search-bar">
+              <input type="text" id="gallerySearch" placeholder="🔍 Search by title or category (e.g. Wedding, Nature, Portrait)" autocomplete="off">
             </div>
-            <div style="margin-top: 40px; background: linear-gradient(145deg,#13131c, #0c0c12); border-radius: 40px; padding: 35px; text-align:center;">
-              <i class="fas fa-video" style="font-size: 2rem;"></i> <p style="margin-top:12px;">We also shoot cinematic highlight films & behind-the-scenes. Inquire for wedding cinematography.</p>
-            </div>
+            <div class="gallery-grid" id="full-gallery">${renderGallery(allImages)}</div>
           </section>
         </div>
       `;
-    } 
-    else if (page === 'packages') {
-      app.innerHTML = `
-        <div class="container">
-          <section>
-            <h2 class="section-title"><span>Photography Investments</span></h2>
-            <p style="text-align:center; margin-bottom: 40px;">Tailored packages for every celebration, with flexible add-ons. All prices include final edited images.</p>
-            <div class="packages-grid">
-              ${packagesData.map(pkg => `
-                <div class="package-card">
-                  <h3 style="font-size: 2rem;">${pkg.name}</h3>
-                  <div class="price">${pkg.price}</div>
-                  <ul style="list-style: none; margin: 25px 0;">
-                    ${pkg.features.map(f => `<li style="margin: 12px 0;"><i class="fas fa-check-circle" style="color:#f5c542; margin-right: 10px;"></i> ${f}</li>`).join('')}
-                  </ul>
-                  <a href="#" class="btn" data-nav="booking" style="background:#f5c542; color:#000;">Book This Package</a>
-                </div>
-              `).join('')}
-            </div>
-            <div style="margin-top: 50px; text-align:center; background: #121217; border-radius: 40px; padding: 28px;">
-              <h3>✨ Destination Wedding Special</h3>
-              <p>Travel beyond Kathmandu? Ask about our custom itinerary packages (Pokhara, Mustang, Chitwan).</p>
-            </div>
-          </section>
-        </div>
-      `;
-    } 
-    else if (page === 'booking') {
-      app.innerHTML = `
-        <div class="container">
-          <section>
-            <h2 class="section-title"><span>Reserve Your Moment</span></h2>
-            <div class="booking-card">
-              <form id="luxuryBookingForm">
-                <div class="form-row">
-                  <div class="input-group"><input type="text" placeholder="Full name *" id="bookName" required></div>
-                  <div class="input-group"><input type="email" placeholder="Email address *" id="bookEmail" required></div>
-                </div>
-                <div class="form-row">
-                  <div class="input-group"><input type="tel" placeholder="Phone / WhatsApp"></div>
-                  <div class="input-group"><select id="interestPackage"><option value="">Select package interest</option><option>Golden Hour</option><option>Royal Wedding</option><option>Cinematic Story</option><option>Custom / Destination</option></select></div>
-                </div>
-                <div class="form-row">
-                  <div class="input-group"><input type="date" id="eventDate"></div>
-                  <div class="input-group"><input type="text" placeholder="Event location (City, Venue)"></div>
-                </div>
-                <div class="input-group"><textarea rows="3" placeholder="Tell us about your vision (couple names, special requests...)"></textarea></div>
-                <button type="submit" class="btn" style="width:100%; background:#f5c542; color:#0b0b0f;">Send Booking Request →</button>
-                <p id="bookingMessage" style="margin-top: 20px; text-align:center;"></p>
-              </form>
-            </div>
-            <div style="margin-top: 45px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-              <div><i class="fas fa-clock"></i> Response within 12h</div>
-              <div><i class="fas fa-calendar-alt"></i> Free consultation call</div>
-              <div><i class="fas fa-hand-holding-heart"></i> No hidden charges</div>
-            </div>
-          </section>
-        </div>
-      `;
-      const form = document.getElementById('luxuryBookingForm');
-      if (form) {
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-          const name = document.getElementById('bookName')?.value;
-          const email = document.getElementById('bookEmail')?.value;
-          if (!name || !email) {
-            document.getElementById('bookingMessage').innerHTML = '⚠️ Please fill name and email.';
-            return;
-          }
-          document.getElementById('bookingMessage').innerHTML = `✅ Thank you ${name}! Your booking inquiry has been received. We'll get back to you within 24 hours.`;
-          form.reset();
+      const searchInput = document.getElementById('gallerySearch');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const term = e.target.value;
+          const galleryContainer = document.getElementById('full-gallery');
+          if (galleryContainer) galleryContainer.innerHTML = renderGallery(allImages, term);
+          attachLightboxToCards();
         });
       }
     }
+    else if (page === 'packages') {
+      app.innerHTML = `<div class="container"><section><h2 class="section-title"><span>Exclusive Packages</span></h2><p style="text-align:center;margin-bottom:40px;">Luxury pricing with absolute transparency. Every package includes edited high-res images.</p><div class="packages-grid">${packages.map(p => `<div class="package-card"><h3 style="font-size:1.8rem;">${p.name}</h3><div class="price">${p.price}</div><ul style="list-style:none;margin:25px 0;">${p.features.map(f => `<li style="margin:10px 0;"><i class="fas fa-check-circle" style="color:#60a5fa;"></i> ${f}</li>`).join('')}</ul><a class="btn" data-nav="booking">Book Now →</a></div>`).join('')}</div><div style="margin-top:50px;background:#111827;border-radius:40px;padding:32px;text-align:center;"><h3>✨ Bespoke Wedding & Destination</h3><p>Contact us for custom quotes, pre-wedding stories, or all-inclusive luxury coverage.</p></div></section></div>`;
+    }
+    else if (page === 'booking') {
+      app.innerHTML = `<div class="container"><section><h2 class="section-title"><span>Secure Your Date</span></h2><div class="booking-card"><form id="bookingForm"><div class="form-row"><div class="input-group"><input type="text" id="bName" placeholder="Full name *" required></div><div class="input-group"><input type="email" id="bEmail" placeholder="Email *" required></div></div><div class="form-row"><div class="input-group"><input type="tel" placeholder="Phone / WhatsApp"></div><div class="input-group"><select id="bPackage"><option>Essential Collection</option><option>Premium Wedding</option><option>Cinematic Story</option></select></div></div><div class="form-row"><div class="input-group"><input type="date" id="bDate"></div><div class="input-group"><input type="text" placeholder="Location (e.g., Tilottama, Butwal)"></div></div><div class="input-group"><textarea rows="3" placeholder="Tell us your dream vision..."></textarea></div><button type="submit" class="btn" style="width:100%;">Send Premium Request →</button><p id="bookMsg" style="margin-top:20px;text-align:center;"></p></form></div><div style="margin-top:40px;display:flex;gap:30px;justify-content:center;color:#94a3b8; flex-wrap:wrap;"><div><i class="fas fa-headset"></i> 12h response</div><div><i class="fas fa-calendar-week"></i> Free consult</div><div><i class="fas fa-shield-alt"></i> Secure booking</div></div></section></div>`;
+      const form = document.getElementById('bookingForm');
+      if (form) form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('bName')?.value.trim();
+        if (!name) { document.getElementById('bookMsg').innerHTML = '⚠️ Please enter your name.'; return; }
+        document.getElementById('bookMsg').innerHTML = `✅ Thank you ${name}! We'll contact you within 12 hours. Welcome to STAR'S STUDIO.`;
+        form.reset();
+      });
+    }
     else if (page === 'contact') {
-      app.innerHTML = `
-        <div class="container">
-          <section>
-            <h2 class="section-title"><span>Let's Create Together</span></h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 50px;">
-              <div style="flex:1; background:#121217; padding: 40px; border-radius: 36px;">
-                <h3><i class="fas fa-map-pin" style="color:#f5c542;"></i> Visit Our Atelier</h3>
-                <p><strong>Kathmandu Studio:</strong> 3rd Floor, Lazimpat Gallery, Kathmandu, Nepal</p>
-                <p><strong>Pokhara Creative Hub:</strong> Lakeside Rd, Pokhara-6</p>
-                <hr style="margin: 20px 0; border-color:#2a2a33;">
-                <p><i class="fas fa-phone"></i> +977 9812345678</p>
-                <p><i class="fas fa-envelope"></i> hello@starsphotostudio.com</p>
-                <p><i class="fab fa-instagram"></i> @starsphoto_nepal</p>
-              </div>
-              <div style="flex:1; background:#121217; padding: 40px; border-radius: 36px;">
-                <h3>We're the #1 Photographer in Kathmandu</h3>
-                <p>Covering weddings, engagements, fashion editorials, and event photography across Nepal. Trusted by 500+ couples.</p>
-                <div style="margin-top: 20px;"><i class="fas fa-trophy"></i> 'Best Wedding Photography Studio 2025' - Nepal Photo Awards</div>
-                <a href="#" class="btn" data-nav="booking" style="margin-top: 32px; display:inline-block;">Inquire Now</a>
-              </div>
-            </div>
-          </section>
-        </div>
-      `;
+      app.innerHTML = `<div class="container"><section><h2 class="section-title"><span>Connect With Elegance</span></h2><div style="display:flex;flex-wrap:wrap;gap:50px;"><div style="flex:1;background:#111827;padding:40px;border-radius:36px;"><h3><i class="fas fa-map-pin" style="color:#60a5fa;"></i> Visit Our Studio</h3><p>Tilottama-5, Butwal, Lumbini Province, Nepal</p><p><i class="fas fa-envelope"></i> starsstudio321@gmail.com</p><p><i class="fas fa-phone"></i> +977 9876543210</p><hr style="margin:20px 0; border-color:#334155;"><div><a href="https://facebook.com/STARSStudioButwal" target="_blank" rel="noopener" style="margin-right:20px;color:#60a5fa;font-size:1.8rem;"><i class="fab fa-facebook"></i></a><a href="https://instagram.com/starsstudio_butwal" target="_blank" rel="noopener" style="margin-right:20px;color:#60a5fa;font-size:1.8rem;"><i class="fab fa-instagram"></i></a><a href="https://wa.me/9779876543210" target="_blank" rel="noopener" style="color:#60a5fa;font-size:1.8rem;"><i class="fab fa-whatsapp"></i></a></div><p style="margin-top:20px; font-size:0.9rem;"><strong>Owner / Creative Director:</strong> TTC BOYS</p></div><div style="flex:1;background:#111827;padding:40px;border-radius:36px;"><h3>📸 Premium Photography in Butwal</h3><p>We capture timeless stories with a modern, natural touch. Whether it's a wedding, engagement, or creative portrait — we bring your vision to life.</p><a class="btn" data-nav="booking" style="margin-top:25px;display:inline-block;">Inquire Now →</a></div></div></section></div>`;
     }
 
-    // re-attach navigation for dynamic buttons and lightbox
+    // Reattach dynamic navigation for buttons inside rendered content
     document.querySelectorAll('[data-nav]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        const target = btn.getAttribute('data-nav');
+        const target = btn.dataset.nav;
         if (target && ['home','portfolio','packages','booking','contact'].includes(target)) {
           renderPage(target);
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
     });
-    // init lightbox for gallery cards in current rendered page
-    setTimeout(() => {
-      const lightboxDiv = document.getElementById('lightbox');
-      if (lightboxDiv) {
-        const imgs = document.querySelectorAll('.gallery-card');
-        imgs.forEach(card => {
-          card.style.cursor = 'pointer';
-          card.addEventListener('click', (e) => {
-            const img = card.querySelector('img');
-            if (img && img.src) {
-              document.getElementById('lightbox-img').src = img.src;
-              document.getElementById('lightbox').classList.add('active');
-            }
-          });
-        });
-      }
-    }, 50);
+    attachLightboxToCards();
   }
 
-  // initial render + lightbox close management
+  // Initialize
   renderPage('home');
-  const lightboxSystem = () => {
-    const closeBtn = document.querySelector('.close-light');
-    if (closeBtn) closeBtn.onclick = () => document.getElementById('lightbox').classList.remove('active');
-    const lb = document.getElementById('lightbox');
-    if (lb) lb.addEventListener('click', (e) => { if (e.target === lb) lb.classList.remove('active'); });
-  };
-  setTimeout(lightboxSystem, 100);
+
+  // Lightbox close handlers
+  const lightbox = document.getElementById('lightbox');
+  const closeBtn = document.querySelector('.close-light');
+  if (closeBtn) closeBtn.onclick = () => lightbox.classList.remove('active');
+  if (lightbox) lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('active'); });
 </script>
 </body>
 </html>
