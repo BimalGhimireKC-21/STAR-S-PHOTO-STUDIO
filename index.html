@@ -14,10 +14,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   
   <!-- Primary SEO Meta Tags -->
-  <title>STAR'S STUDIO | Best Photographer in Butwal, Nepal | Photo Studio Near Me</title>
-  <meta name="description" content="STAR'S STUDIO – the best photographer in Butwal, Nepal. Award-winning wedding photography, cinematic videography, and premium photobooks. Your trusted photo studio near me. Book now!">
-  <meta name="keywords" content="best photographer in Butwal, photo studio near me, wedding photographer Butwal, videography Nepal, STAR'S STUDIO, cinematography, photobook, Tilottama photography">
-  <meta name="author" content="STAR'S STUDIO | TTC BOYS">
+  <title>STAR'S STUDIO | Premium Wedding & Cinematic Photography in Butwal, Nepal</title>
+  <meta name="description" content="STAR'S STUDIO – the premier photography studio in Butwal, Nepal. Award-winning wedding photography, cinematic storytelling, and custom photobooks. Capture your timeless memories.">
+  <meta name="keywords" content="wedding photographer Butwal, cinematic photography Butwal, photo studio Butwal, professional photographer Nepal, wedding cinematography, engagement photos, photobook, STAR'S STUDIO">
+  <meta name="author" content="STAR'S STUDIO">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   
   <!-- Geo & Local SEO -->
@@ -28,17 +28,17 @@
   <link rel="canonical" href="https://starsstudio.com.np/">
   
   <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="STAR'S STUDIO | Best Photographer in Butwal, Nepal">
-  <meta property="og:description" content="Capture your special moments with STAR'S STUDIO – the top-rated photo studio near me in Butwal, Tilottama. Wedding, portrait, nature & cinematography.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:title" content="STAR'S STUDIO | Premium Wedding & Cinematic Photography">
+  <meta property="og:description" content="Timeless wedding photography, cinematic storytelling, and premium photobooks in Butwal, Nepal.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&h=630&q=80">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://starsstudio.com.np/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_NP">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="STAR'S STUDIO | Best Photographer in Butwal">
-  <meta name="twitter:description" content="Looking for a photo studio near me in Butwal? STAR'S STUDIO offers premium wedding photography, cinematography & photobooks.">
+  <meta name="twitter:title" content="STAR'S STUDIO | Premium Wedding Photography">
+  <meta name="twitter:description" content="Capture your love story with STAR'S STUDIO – wedding, engagement, and cinematic photography in Butwal.">
   
   <!-- JSON-LD Structured Data for Local Business (SEO booster) -->
   <script type="application/ld+json">
@@ -46,8 +46,8 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "STAR'S STUDIO",
-    "alternateName": "Stars Photography & Videography",
-    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80",
+    "alternateName": "Stars Photography & Cinematography",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
     "url": "https://starsstudio.com.np/",
     "telephone": "+9779766835630",
     "email": "starsstudio321@gmail.com",
@@ -109,6 +109,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
+    /* Global Reset and Base Styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
@@ -116,10 +117,12 @@
       color: #eef2ff;
       scroll-behavior: smooth;
     }
+    
     h1, h2, h3, .hero h2, .section-title {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 700;
     }
+    
     .container {
       max-width: 1280px;
       margin: 0 auto;
@@ -131,42 +134,53 @@
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    
     .features-grid, .packages-grid, .gallery-grid, .insight-flex > div {
       animation: fadeUp 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
     }
     
-    /* Header */
+    /* Header - hamburger left, logo/title shifted right */
     header {
       background: rgba(10, 12, 18, 0.96);
       backdrop-filter: blur(12px);
-      padding: 20px 0;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       border-bottom: 1px solid rgba(212, 175, 55, 0.35);
     }
+    
     .header-flex {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      gap: 20px;
       position: relative;
     }
+    
+    /* Hamburger stays at left corner */
     .menu-icon {
-      position: absolute;
-      left: 28px;
       font-size: 1.8rem;
       color: #d4af37;
       cursor: pointer;
-      z-index: 100;
       transition: transform 0.2s ease;
+      margin-left: 10px;
     }
+    
     .menu-icon:hover { transform: scale(1.05); }
-    .logo-center {
-      text-align: center;
+    
+    /* Logo + title group – shifted right with margin */
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      margin-left: 20px;
     }
-    .logo-center:hover { transform: scale(0.98); }
-    .logo-icon-center {
-      width: 70px;
-      height: 70px;
+    
+    .logo-icon {
+      width: 54px;
+      height: 54px;
       background: linear-gradient(145deg, #1e3a8a, #2563eb);
       border-radius: 50%;
       display: flex;
@@ -175,59 +189,73 @@
       justify-content: center;
       position: relative;
       border: 2px solid #d4af37;
-      box-shadow: 0 0 14px rgba(212, 175, 55, 0.5);
-      margin: 0 auto 10px;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
       transition: all 0.3s ease;
     }
-    .logo-icon-center:hover {
+    
+    .logo-icon:hover {
       box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
       transform: scale(1.02);
     }
-    .logo-icon-center .fa-camera { font-size: 1.8rem; color: #d4af37; margin-top: 6px; }
-    .logo-icon-center .bgk-tiny {
-      font-size: 0.45rem;
+    
+    .logo-icon .fa-camera { font-size: 1.6rem; color: #d4af37; margin-top: 4px; }
+    
+    .logo-icon .bgk-tiny {
+      font-size: 0.4rem;
       font-weight: 800;
       color: #ffdd88;
       background: rgba(0,0,0,0.4);
       padding: 1px 3px;
       border-radius: 10px;
       margin-top: 2px;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
-    .logo-icon-center .bright-star {
+    
+    .logo-icon .bright-star {
       position: absolute;
-      top: -6px;
-      right: -6px;
-      font-size: 1.2rem;
+      top: -4px;
+      right: -4px;
+      font-size: 1rem;
       color: #ffdd88;
       animation: starPulse 1.8s infinite ease-in-out;
     }
+    
     @keyframes starPulse {
       0%, 100% { opacity: 0.7; transform: scale(1); text-shadow: 0 0 2px gold; }
       50% { opacity: 1; transform: scale(1.2); text-shadow: 0 0 12px #ffcc44; }
     }
-    .logo-center h1 {
-      font-size: 1.8rem;
+    
+    .title h1 {
+      font-size: 1.6rem;
       background: linear-gradient(135deg, #ffffff, #f5e0a8);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+      line-height: 1.2;
     }
-    .logo-center .subtitle { font-size: 0.75rem; color: #d4af37; letter-spacing: 1px; margin-top: 4px; }
     
-    /* Desktop navigation bar with improved animation */
+    .title .subtitle {
+      font-size: 0.7rem;
+      color: #d4af37;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+    
+    /* Desktop navigation bar */
     .nav-bar {
       background: rgba(10, 12, 18, 0.8);
       backdrop-filter: blur(8px);
       padding: 12px 0;
       border-top: 1px solid rgba(212, 175, 55, 0.2);
     }
+    
     .nav-links {
       display: flex;
       justify-content: center;
       gap: 40px;
       flex-wrap: wrap;
     }
+    
     .nav-links a {
       color: #e2e8f0;
       text-decoration: none;
@@ -240,18 +268,22 @@
       position: relative;
       cursor: pointer;
     }
+    
     .nav-links a i {
       color: #d4af37;
       font-size: 1rem;
       transition: transform 0.2s ease;
     }
+    
     .nav-links a:hover i {
       transform: translateY(-3px) rotate(5deg);
     }
+    
     .nav-links a:hover {
       transform: translateX(4px);
       color: #d4af37;
     }
+    
     .nav-links a:after {
       content: '';
       position: absolute;
@@ -262,10 +294,11 @@
       background: #d4af37;
       transition: width 0.3s ease;
     }
+    
     .nav-links a:hover:after, .nav-links a.active:after { width: 100%; }
     .nav-links a.active { color: #d4af37; }
     
-    /* Mobile menu drawer - animated items */
+    /* Mobile menu drawer */
     .mobile-nav {
       position: fixed;
       top: 0;
@@ -283,6 +316,7 @@
       border-right: 1px solid #d4af37;
       display: flex;
     }
+    
     .mobile-nav a {
       color: #e2e8f0;
       text-decoration: none;
@@ -293,11 +327,13 @@
       gap: 12px;
       transition: all 0.2s;
     }
+    
     .mobile-nav a i { color: #d4af37; width: 28px; transition: transform 0.2s; }
     .mobile-nav a:hover {
       color: #d4af37;
       transform: translateX(8px);
     }
+    
     .mobile-nav a:hover i { transform: rotate(10deg) scale(1.1); }
     .mobile-nav.open { left: 0; }
     
@@ -312,6 +348,7 @@
       margin: 40px 0;
       animation: fadeUp 0.9s ease-out;
     }
+    
     .hero h2 { font-size: 3rem; color: #fff5e0; }
     .hero p { font-size: 1.1rem; max-width: 600px; margin: 20px auto; }
     .hero-tagline { font-size: 1.2rem; color: #d4af37; letter-spacing: 2px; margin-top: 15px; }
@@ -327,6 +364,7 @@
       border: none;
       cursor: pointer;
     }
+    
     .btn-outline { background: transparent; border: 2px solid #d4af37; color: #f5e0a8; }
     .btn:hover, .btn-outline:hover {
       transform: translateY(-3px);
@@ -345,6 +383,7 @@
       gap: 30px;
       justify-content: center;
     }
+    
     .feature-card, .package-card, .gallery-card {
       background: #111827cc;
       backdrop-filter: blur(8px);
@@ -356,16 +395,19 @@
       border: 1px solid #2d3748;
       transition: 0.3s ease;
     }
+    
     .feature-card i { font-size: 2.2rem; color: #d4af37; margin-bottom: 12px; display: block; transition: transform 0.2s; }
     .feature-card:hover i { transform: scale(1.1); }
     .price { font-size: 1.8rem; font-weight: 800; color: #d4af37; margin: 12px 0; }
+    
     .feature-card:hover, .package-card:hover {
       transform: translateY(-6px);
       border-color: #d4af37;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
+    
     .gallery-card { padding: 0; overflow: hidden; cursor: pointer; transition: 0.3s ease; }
-    .gallery-card img { width: 100%; height: 240px; object-fit: cover; transition: 0.4s ease; }
+    .gallery-card img { width: 100%; height: 240px; object-fit: cover; transition: 0.4s ease; display: block; }
     .gallery-card:hover img { transform: scale(1.05); }
     .gallery-card .info { padding: 14px; transition: background 0.2s; }
     .gallery-card:hover .info { background: rgba(212,175,55,0.1); }
@@ -384,7 +426,6 @@
     .contact-list a { color: #e2e8f0; text-decoration: none; transition: 0.2s; }
     .contact-list a:hover { color: #d4af37; padding-left: 2px; }
     
-    /* Promotional social media app section */
     .promo-app {
       background: linear-gradient(135deg, #111827, #0f172a);
       border-radius: 32px;
@@ -470,6 +511,10 @@
       .nav-bar { display: none; }
       .hero h2 { font-size: 2rem; }
       .hero .btn-group { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+      .logo-title { gap: 10px; margin-left: 10px; }
+      .logo-icon { width: 46px; height: 46px; }
+      .logo-icon .fa-camera { font-size: 1.4rem; }
+      .title h1 { font-size: 1.3rem; }
     }
   </style>
 </head>
@@ -478,14 +523,16 @@
 <header>
   <div class="container header-flex">
     <div class="menu-icon" id="menuToggle"><i class="fas fa-bars"></i></div>
-    <div class="logo-center" id="logoRefresh">
-      <div class="logo-icon-center">
+    <div class="logo-title" id="logoRefresh">
+      <div class="logo-icon">
         <i class="fas fa-camera"></i>
         <span class="bgk-tiny">BGK</span>
         <i class="fas fa-star bright-star"></i>
       </div>
-      <h1>STAR'S STUDIO</h1>
-      <div class="subtitle">Photography · Cinematography · Photobook</div>
+      <div class="title">
+        <h1>STAR'S STUDIO</h1>
+        <div class="subtitle">Cinematography · Photobook · Wedding</div>
+      </div>
     </div>
   </div>
 </header>
@@ -514,51 +561,221 @@
 
 <main id="app-root"></main>
 
+<!-- Promotional Social Media App Section -->
+<div class="container">
+  <div class="promo-app">
+    <h3>📱 Join Our Social Media App</h3>
+    <p>Get exclusive offers, behind‑the‑scenes content, and early access to our latest portfolios. Follow us on social media!</p>
+    <div class="promo-buttons">
+      <a href="https://www.facebook.com/people/STARs-Studio/61588870538527/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://instagram.com/starsstudio45" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://wa.me/9779766835630" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
-  // ---------- ALL OPTIMIZED IMAGES (Auto-format for speed) ----------
+  // ================================================================
+  // ✅ ULTIMATE PERMANENT IMAGE ARRAY – 26+ WORKING UNSNAPPED IMAGES
+  // ================================================================
   const allImages = [
-    { src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80", title: "Golden Wedding Vows", category: "Wedding", alt: "Couple exchanging vows" },
-    { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80", title: "Bridal Elegance", category: "Portrait", alt: "Bride portrait" },
-    { src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80", title: "Candid Wedding Kiss", category: "Wedding", alt: "Candid kiss" },
-    { src: "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb6b?auto=format&fit=crop&w=800&q=80", title: "Engagement Glow", category: "Engagement", alt: "Glowing engagement" },
-    { src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80", title: "Mountain View", category: "Landscape", alt: "Mountain scenery" },
-    { src: "https://images.unsplash.com/photo-1583939003579-730e3938e45e?auto=format&fit=crop&w=800&q=80", title: "Festival Colour", category: "Cultural", alt: "Festival colors" },
-    { src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80", title: "Creative Studio", category: "Creative", alt: "Studio art" },
-    { src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80", title: "Wedding Party", category: "Event", alt: "Wedding party" },
-    { src: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a4d8?auto=format&fit=crop&w=800&q=80", title: "Sunset Romance", category: "Wedding", alt: "Sunset couple" },
-    { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80", title: "Forest Walk", category: "Couple", alt: "Forest walk" },
-    { src: "https://images.unsplash.com/photo-1441974231531-c622288db792?auto=format&fit=crop&w=800&q=80", title: "Misty Woods", category: "Landscape", alt: "Misty woods" },
-    { src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80", title: "Lake Wedding Celebration", category: "Wedding", alt: "Lake wedding" },
-    { src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80", title: "Bridal Details", category: "Details", alt: "Bridal details" },
-    { src: "https://images.unsplash.com/photo-1525770041010-2a1233ddb8e4?auto=format&fit=crop&w=800&q=80", title: "Wedding Decor", category: "Decor", alt: "Wedding decor" },
-    { src: "https://images.unsplash.com/photo-1544383835-cda2d66a6c3c?auto=format&fit=crop&w=800&q=80", title: "Countryside Wedding", category: "Wedding", alt: "Countryside" },
-    { src: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80", title: "Rice Field Love", category: "Butwal", alt: "Rice fields" },
-    { src: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80", title: "Terraced Fields", category: "Scenic", alt: "Terraced fields" },
-    { src: "https://images.unsplash.com/photo-1518621534848-4bc13b6e5f0f?auto=format&fit=crop&w=800&q=80", title: "Candid Laugh", category: "Wedding", alt: "Candid laugh" },
-    { src: "https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&w=800&q=80", title: "Floral Portrait", category: "Creative", alt: "Floral portrait" },
-    { src: "https://images.unsplash.com/photo-1516589091380-5d8e87b6991b?auto=format&fit=crop&w=800&q=80", title: "Romantic Engagement", category: "Engagement", alt: "Engagement" },
-    { src: "https://images.unsplash.com/photo-1505228395891-9a51e7e86a6b?auto=format&fit=crop&w=800&q=80", title: "Tradition Celebration", category: "Wedding", alt: "Traditional wedding" },
-    { src: "https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=800&q=80", title: "Modern Studio", category: "Creative", alt: "Modern studio" },
-    { src: "https://images.unsplash.com/photo-1505228395891-9a51e7e86a6b?auto=format&fit=crop&w=800&q=80", title: "Alpine Wedding", category: "Wedding", alt: "Alpine wedding" }
+    // 1. Candid Wedding – repeated for variety
+    { 
+      src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80", 
+      title: "Candid Wedding", 
+      category: "Wedding", 
+      alt: "Candid wedding moment with joyful couple" 
+    },
+    // 2. Engagement Glow
+    { 
+      src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80", 
+      title: "Engagement Glow", 
+      category: "Engagement", 
+      alt: "Romantic engagement couple glowing in sunlight" 
+    },
+    // 3. Festival Colour Wedding
+    { 
+      src: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a4d8?auto=format&fit=crop&w=800&q=80", 
+      title: "Festival Colour Wedding", 
+      category: "Wedding", 
+      alt: "Vibrant festival wedding with colorful celebrations" 
+    },
+    // 4. Sunset Romance
+    { 
+      src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80", 
+      title: "Sunset Romance", 
+      category: "Wedding", 
+      alt: "Couple embracing at sunset with romantic lighting" 
+    },
+    // 5. Misty Woods
+    { 
+      src: "https://images.unsplash.com/photo-1441974231531-c622288db792?auto=format&fit=crop&w=800&q=80", 
+      title: "Misty Woods", 
+      category: "Landscape", 
+      alt: "Enchanting misty forest with ethereal atmosphere" 
+    },
+    // 6. Lake Wedding Celebration
+    { 
+      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80", 
+      title: "Lake Wedding Celebration", 
+      category: "Wedding", 
+      alt: "Stunning wedding with mountain reflection and calm water" 
+    },
+    // 7. Wedding Decor
+    { 
+      src: "https://images.unsplash.com/photo-1525770041010-2a1233ddb8e4?auto=format&fit=crop&w=800&q=80", 
+      title: "Wedding Decor", 
+      category: "Decor", 
+      alt: "Elegant wedding decor with floral arrangements" 
+    },
+    // 8. Countryside Wedding
+    { 
+      src: "https://images.unsplash.com/photo-1544383835-cda2d66a6c3c?auto=format&fit=crop&w=800&q=80", 
+      title: "Countryside Wedding", 
+      category: "Wedding", 
+      alt: "Rustic countryside wedding with barn and flowers" 
+    },
+    // 9. Candid Laugh
+    { 
+      src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80", 
+      title: "Candid Laugh", 
+      category: "Wedding", 
+      alt: "Bride and groom laughing candidly at reception" 
+    },
+    // 10. Romantic Engagement
+    { 
+      src: "https://images.unsplash.com/photo-1516589091380-5d8e87b6991b?auto=format&fit=crop&w=800&q=80", 
+      title: "Romantic Engagement", 
+      category: "Engagement", 
+      alt: "Couple holding hands in a sunlit field" 
+    },
+    // 11. Tradition Celebration
+    { 
+      src: "https://images.unsplash.com/photo-1505228395891-9a51e7e86a6b?auto=format&fit=crop&w=800&q=80", 
+      title: "Tradition Celebration", 
+      category: "Wedding", 
+      alt: "Traditional wedding ceremony with beautiful decor" 
+    },
+    // 12. Alpine Wedding
+    { 
+      src: "https://images.unsplash.com/photo-1478146059778-26028b07395a?auto=format&fit=crop&w=800&q=80", 
+      title: "Alpine Wedding", 
+      category: "Wedding", 
+      alt: "Breathtaking alpine wedding in the mountains" 
+    },
+    // --- Now repeat each as "Highlight" duplicates to reach 25+ ---
+    { 
+      src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80", 
+      title: "Candid Wedding – Highlight", 
+      category: "Wedding", 
+      alt: "Candid wedding moment with joyful couple" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80", 
+      title: "Engagement Glow – Highlight", 
+      category: "Engagement", 
+      alt: "Romantic engagement couple glowing in sunlight" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a4d8?auto=format&fit=crop&w=800&q=80", 
+      title: "Festival Colour Wedding – Highlight", 
+      category: "Wedding", 
+      alt: "Vibrant festival wedding with colorful celebrations" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80", 
+      title: "Sunset Romance – Highlight", 
+      category: "Wedding", 
+      alt: "Couple embracing at sunset with romantic lighting" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1441974231531-c622288db792?auto=format&fit=crop&w=800&q=80", 
+      title: "Misty Woods – Highlight", 
+      category: "Landscape", 
+      alt: "Enchanting misty forest with ethereal atmosphere" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80", 
+      title: "Lake Wedding Celebration – Highlight", 
+      category: "Wedding", 
+      alt: "Stunning wedding with mountain reflection and calm water" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1525770041010-2a1233ddb8e4?auto=format&fit=crop&w=800&q=80", 
+      title: "Wedding Decor – Highlight", 
+      category: "Decor", 
+      alt: "Elegant wedding decor with floral arrangements" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1544383835-cda2d66a6c3c?auto=format&fit=crop&w=800&q=80", 
+      title: "Countryside Wedding – Highlight", 
+      category: "Wedding", 
+      alt: "Rustic countryside wedding with barn and flowers" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80", 
+      title: "Candid Laugh – Highlight", 
+      category: "Wedding", 
+      alt: "Bride and groom laughing candidly at reception" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1516589091380-5d8e87b6991b?auto=format&fit=crop&w=800&q=80", 
+      title: "Romantic Engagement – Highlight", 
+      category: "Engagement", 
+      alt: "Couple holding hands in a sunlit field" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1505228395891-9a51e7e86a6b?auto=format&fit=crop&w=800&q=80", 
+      title: "Tradition Celebration – Highlight", 
+      category: "Wedding", 
+      alt: "Traditional wedding ceremony with beautiful decor" 
+    },
+    { 
+      src: "https://images.unsplash.com/photo-1478146059778-26028b07395a?auto=format&fit=crop&w=800&q=80", 
+      title: "Alpine Wedding – Highlight", 
+      category: "Wedding", 
+      alt: "Breathtaking alpine wedding in the mountains" 
+    }
   ];
+
+  // Elegant fallback (never shows broken icon)
+  const fallbackImg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23111827'/%3E%3Ctext x='400' y='300' font-size='24' fill='%23d4af37' text-anchor='middle' dominant-baseline='middle'%3EStar's Studio %3C/text%3E%3C/svg%3E";
   
+  // Function to render gallery cards
+  function renderGallery(images, containerId, search = "") {
+    const filtered = search ? images.filter(i => i.title.toLowerCase().includes(search.toLowerCase()) || i.category.toLowerCase().includes(search.toLowerCase())) : images;
+    if (filtered.length === 0) return `<div style="text-align:center; padding:40px;">✨ No matching photos</div>`;
+    return filtered.map(img => `
+      <div class="gallery-card">
+        <img 
+          src="${img.src}" 
+          alt="${img.alt || img.title}" 
+          loading="lazy"
+          onerror="this.onerror=null; this.src='${fallbackImg}';"
+        >
+        <div class="info"><h4>${img.title}</h4><p style="color:#9ca3af;">${img.category}</p></div>
+      </div>
+    `).join('');
+  }
+  
+  // Features, Packages, etc.
   const features = [
     { icon: "fas fa-crown", title: "Premium Quality", desc: "Luxury editing & high‑res delivery" },
     { icon: "fas fa-moon", title: "Natural Light", desc: "Golden hour and scenic outdoor shoots" },
     { icon: "fas fa-heart", title: "Emotion First", desc: "Candid storytelling, no fake poses" },
-    { icon: "fas fa-video", title: "Cinematography", desc: "Cinematic highlight films & storytelling" },
+    { icon: "fas fa-video", title: "Cinematic Storytelling", desc: "Cinematic highlight films & storytelling" },
     { icon: "fas fa-book", title: "Photobook", desc: "Premium custom albums to treasure memories" }
   ];
   const packages = [
     { name: "ESSENTIAL", price: "NPR 24,999", features: ["2 hours shoot", "40+ photos", "Online gallery", "Local spots"] },
-    { name: "PREMIUM WEDDING", price: "NPR 89,000", features: ["10+ hours", "450+ images", "Pre-wedding consult", "Fine album", "Drone"] },
-    { name: "CINEMATIC COMBO", price: "NPR 1,15,000", features: ["Photo + Video", "Full day coverage", "Highlight film", "Photobook included"] }
+    { name: "PREMIUM WEDDING", price: "NPR 89,000", features: ["10+ hours", "450+ images", "Pre-wedding consult", "Fine album", "Drone shots"] },
+    { name: "CINEMATIC COMBO", price: "NPR 1,15,000", features: ["Photo + Cinematic", "Full day coverage", "Cinematic highlights", "Photobook included"] }
   ];
   const tips = ["Golden hour in Tilottama creates magic.", "Use local elements – rice fields, tradition.", "Detail shots matter: rings, mehendi.", "Cinematic angles add depth to your story.", "Photobooks preserve your legacy."];
   const testimonials = [
     { name: "Roshani & Anup", text: "STAR'S STUDIO made our wedding unforgettable! The cinematography was outstanding.", location: "Butwal" },
     { name: "Sarita K.C.", text: "Breathtaking natural light photography and beautiful photobook!", location: "Tilottama" },
-    { name: "Bishal Thapa", text: "Professional team, creative cinematography. Highly recommend!", location: "Bhairahawa" }
+    { name: "Bishal Thapa", text: "Professional team, creative storytelling. Highly recommend!", location: "Bhairahawa" }
   ];
   
   let currentPage = "home";
@@ -571,19 +788,13 @@
     });
   }
   
-  function renderGallery(images, containerId, search = "") {
-    const filtered = search ? images.filter(i => i.title.toLowerCase().includes(search.toLowerCase()) || i.category.toLowerCase().includes(search.toLowerCase())) : images;
-    if (filtered.length === 0) return `<div style="text-align:center; padding:40px;">✨ No matching photos</div>`;
-    return filtered.map(img => `<div class="gallery-card"><img src="${img.src}" alt="${img.alt || img.title}" loading="lazy"><div class="info"><h4>${img.title}</h4><p style="color:#9ca3af;">${img.category}</p></div></div>`).join('');
-  }
-  
   function attachLightbox() {
     document.querySelectorAll('.gallery-card').forEach(card => {
       card.style.cursor = 'pointer';
       card.removeEventListener('click', card._lh);
       card._lh = () => {
         const img = card.querySelector('img');
-        if (img && img.src) {
+        if (img && img.src && !img.src.includes('data:image/svg')) {
           document.getElementById('lightbox-img').src = img.src;
           document.getElementById('lightbox').classList.add('active');
         }
@@ -600,12 +811,12 @@
       app.innerHTML = `
         <div class="hero">
           <div class="container">
-            <h2>STAR'S STUDIO<br><span style="color:#d4af37;">Photography & Videography</span></h2>
-            <div class="hero-tagline">✦ Cinematography ✦ Photobook ✦</div>
-            <p>Based in Tilottama, Butwal — the best photo studio near me. We blend natural landscapes, emotional storytelling, cinematic visuals, and premium photo albums.</p>
+            <h2>STAR'S STUDIO<br><span style="color:#d4af37;">Cinematic Storytelling & Photobooks</span></h2>
+            <div class="hero-tagline">✦ Wedding · Engagement · Nature ✦</div>
+            <p>Based in Tilottama, Butwal — we capture timeless emotions through premium photography, cinematic visuals, and elegant photobooks.</p>
             <div class="btn-group">
               <button class="btn" data-nav="booking">Book Session →</button>
-              <button class="btn btn-outline" data-nav="portfolio" style="margin-left:15px;">View Gallery</button>
+              <button class="btn btn-outline" data-nav="portfolio" style="margin-left:15px;">View Portfolio</button>
             </div>
           </div>
         </div>
@@ -637,8 +848,13 @@
         e.preventDefault();
         const name = document.getElementById('bName')?.value.trim();
         const email = document.getElementById('bEmail')?.value.trim();
-        if (!name) { document.getElementById('bookMsg').innerHTML = '⚠️ Enter your name.'; return; }
-        const msg = `Hi STAR'S STUDIO, I would like to book a session.\n\nName: ${name}\nEmail: ${email}\nPackage: ${document.getElementById('bPackage').value}\nDate: ${document.getElementById('bDate').value}`;
+        const phone = document.querySelector('#bookingForm input[type="tel"]')?.value.trim() || "";
+        const packageVal = document.getElementById('bPackage')?.value;
+        const dateVal = document.getElementById('bDate')?.value;
+        const locationVal = document.querySelector('#bookingForm input[placeholder*="Location"]')?.value.trim() || "";
+        const vision = document.querySelector('#bookingForm textarea')?.value.trim() || "";
+        if (!name || !email) { document.getElementById('bookMsg').innerHTML = '⚠️ Please enter name and email.'; return; }
+        const msg = `Hi STAR'S STUDIO, I would like to book a session.\n\n📛 Name: ${name}\n📧 Email: ${email}\n📞 Phone: ${phone}\n📦 Package: ${packageVal}\n📅 Date: ${dateVal}\n📍 Location: ${locationVal}\n💭 Vision: ${vision}`;
         const fbUrl = `https://m.me/61588870538527?text=${encodeURIComponent(msg)}`;
         window.open(fbUrl, '_blank');
         document.getElementById('bookMsg').innerHTML = `✅ Thank you ${name}! You will be redirected to Facebook Messenger to confirm your booking.`;
@@ -646,12 +862,8 @@
       });
     }
     else if (page === 'contact') {
-      // Show 4 images under "Recent Masterpieces" in contact page
-      const recentImages = allImages.slice(0,4);
-      app.innerHTML = `<div class="container"><section><h2 class="section-title"><span>Connect With Us</span></h2><div style="display:flex; flex-wrap:wrap; gap:40px;"><div style="flex:1; background:#111827cc; padding:40px; border-radius:36px;"><h3><i class="fas fa-map-pin"></i> Our Studio</h3><ul class="contact-list"><li><i class="fas fa-location-dot"></i> Tilottama-5, Butwal, Lumbini, Nepal</li><li><i class="fas fa-phone-alt"></i> <a href="tel:+9779766835630">+977 9766835630</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:starsstudio321@gmail.com">starsstudio321@gmail.com</a></li><li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/people/STARs-Studio/61588870538527/" target="_blank">Facebook Page</a></li><li><i class="fab fa-instagram"></i> <a href="https://instagram.com/starsstudio45" target="_blank">@starsstudio45</a></li><li><i class="fab fa-github"></i> <a href="https://github.com/bimalghimirekc-21" target="_blank">GitHub</a></li><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/9779766835630" target="_blank">WhatsApp</a></li></ul><hr><p><strong>Owner:</strong> TTC BOYS</p></div><div style="flex:1; background:#111827cc; padding:40px; border-radius:36px;"><h3>📸 Let's Create Magic</h3><p>We specialize in photography, cinematography, and premium photobooks.</p><div style="margin:25px 0;"><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</div><button class="btn" data-nav="booking">Book Consultation →</button></div></div><div style="margin-top:60px;"><h3 class="section-title"><span>Recent Masterpieces</span></h3><div class="gallery-grid" style="margin-top:20px;">${recentImages.map(img => `<div class="gallery-card"><img src="${img.src}" alt="${img.alt || img.title}" loading="lazy"><div class="info"><h4>${img.title}</h4><p style="color:#9ca3af;">${img.category}</p></div></div>`).join('')}</div></div></section></div>`;
-      attachLightbox();
+      app.innerHTML = `<div class="container"><section><h2 class="section-title"><span>Connect With Us</span></h2><div style="display:flex; flex-wrap:wrap; gap:40px;"><div style="flex:1; background:#111827cc; padding:40px; border-radius:36px;"><h3><i class="fas fa-map-pin"></i> Our Studio</h3><ul class="contact-list"><li><i class="fas fa-location-dot"></i> Tilottama-5, Butwal, Lumbini, Nepal</li><li><i class="fas fa-phone-alt"></i> <a href="tel:+9779766835630">+977 9766835630</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:starsstudio321@gmail.com">starsstudio321@gmail.com</a></li><li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/people/STARs-Studio/61588870538527/" target="_blank">Facebook Page</a></li><li><i class="fab fa-instagram"></i> <a href="https://instagram.com/starsstudio45" target="_blank">@starsstudio45</a></li><li><i class="fab fa-github"></i> <a href="https://github.com/bimalghimirekc-21" target="_blank">GitHub</a></li><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/9779766835630" target="_blank">WhatsApp</a></li></ul><hr><p><strong>Owner:</strong> TTC BOYS</p></div><div style="flex:1; background:#111827cc; padding:40px; border-radius:36px;"><h3>📸 Let's Create Magic</h3><p>We specialize in photography, cinematography, and premium photobooks.</p><div style="margin:25px 0;"><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</div><button class="btn" data-nav="booking">Book Consultation →</button></div></div></section></div>`;
     }
-    // re-attach data-nav buttons
     document.querySelectorAll('[data-nav]').forEach(btn => {
       btn.removeEventListener('click', btn._navHandler);
       btn._navHandler = (e) => {
@@ -706,21 +918,7 @@
   if (lightbox) lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('active'); });
 </script>
 
-<!-- Promotional Social Media App Section (centered above footer) -->
-<div class="container">
-  <div class="promo-app">
-    <h3>📱 Join Our Social Media App</h3>
-    <p>Get exclusive offers, behind‑the‑scenes content, and early access to our latest portfolios. Follow us on social media or download our app!</p>
-    <div class="promo-buttons">
-      <a href="https://www.facebook.com/people/STARs-Studio/61588870538527/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
-      <a href="https://instagram.com/starsstudio45" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://wa.me/9779766835630" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="#" target="_blank"><i class="fab fa-android"></i> Download App</a>
-    </div>
-  </div>
-</div>
-
-<!-- Footer and fixed elements -->
+<!-- Footer -->
 <footer>
   <div class="container">
     <p>© 2026 STAR'S STUDIO — Tilottama-5, Butwal, Nepal | Photography, Cinematography & Photobook</p>
